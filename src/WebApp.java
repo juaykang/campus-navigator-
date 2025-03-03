@@ -113,7 +113,8 @@ public class WebApp {
   private static FrontendInterface createWorkingFrontend(String filename) throws IOException {
     GraphADT<String,Double> graph = new DijkstraGraph<>();
     BackendInterface backend = new Backend((DijkstraGraph<String, Double>) graph);
-    backend.loadGraphData(filename);
+    backend.loadGraph
+  Data(filename);
     FrontendInterface frontend = new Frontend(backend);
     return frontend;
   }
